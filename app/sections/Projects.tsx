@@ -3,9 +3,11 @@ import projects from "~/data/projects.json";
 
 const Projects = () => {
   return (
-    <div className="flex gap-16 justify-evenly">
+    <div className="flex flex-wrap flex-col md:flex-row items-center justify-center md:justify-start">
       {projects.projects.map((project) => (
-        <Project project={project} key={project.id} />
+        <div className="md:w-1/2" key={project.id}>
+          <Project project={project} />
+        </div>
       ))}
     </div>
   );

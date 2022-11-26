@@ -1,5 +1,5 @@
-import Links from "~/components/Links";
-import Avatar from "../components/Avatar";
+import Links from '~/components/Links'
+import Avatar from '../components/Avatar'
 
 const AboutMe = () => {
   return (
@@ -11,7 +11,7 @@ const AboutMe = () => {
         Ingeniero Informático | FullStack Engineer
       </h4>
       <Avatar />
-      <p className="my-10 px-3 md:px-0 text-lg md:text-xl md:max-w-xl text-center text-gray-700">
+      <p className="my-10 px-3 md:px-0 text-lg md:text-xl md:max-w-xl text-center text-gray-700 dark:text-white">
         ¡Hola 👋🏼! Soy un FullStack Engineer graduado en Ingeniería Informática.
         Me considero una persona muy proactiva con muchas ganas de aprender y
         crecer, además de un apasionado de la tecnología. ¡Conoce más de mí en
@@ -19,7 +19,7 @@ const AboutMe = () => {
       </p>
       <Links />
     </div>
-  );
-};
+  )
+}
 
-export default AboutMe;
+export default AboutMe

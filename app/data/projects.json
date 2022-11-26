@@ -7,6 +7,31 @@
       "tools": ["react", "tailwindcss", "vitejs", "javascript"],
       "repo": "https://github.com/franjsb1903/citas-react",
       "link": "https://fastidious-seahorse-98f522.netlify.app/"
+    },
+    {
+      "id": 2,
+      "title": "Sentidiño",
+      "description": "Aplicación de notas con API y frontend en monorepo",
+      "tools": [
+        "react",
+        "styled_components",
+        "vitejs",
+        "typescript",
+        "redux",
+        "react_router_dom",
+        "nodejs",
+        "express",
+        "sqlite3"
+      ],
+      "repo": "https://github.com/franjsb1903/sentidinho"
+    },
+    {
+      "id": 3,
+      "title": "Control de gastos",
+      "description": "Aplicación para el control de gastos de un usuario en base a un presupuesto definido",
+      "tools": ["react", "vitejs", "javascript"],
+      "repo": "https://github.com/franjsb1903/control-gastos",
+      "link": "https://cerulean-rolypoly-11ce7e.netlify.app/"
     }
   ]
 }

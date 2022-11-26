@@ -1,7 +1,7 @@
-import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 
 const Links = () => (
-  <div className="text-5xl flex gap-16 justify-center max-w-xl text-gray-500">
+  <div className="text-5xl flex gap-16 justify-center max-w-xl text-gray-500 dark:text-white">
     <a
       href="https://www.linkedin.com/in/francisco-javier-saa-besteiro/"
       target="_blank"
@@ -13,6 +13,6 @@ const Links = () => (
       <AiFillGithub />
     </a>
   </div>
-);
+)
 
-export default Links;
+export default Links
