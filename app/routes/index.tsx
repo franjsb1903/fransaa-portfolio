@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Nav from "~/components/Nav";
-import AboutMe from "~/components/AboutMe";
+import AboutMe from "~/sections/AboutMe";
+import Projects from "~/sections/Projects";
 
 const Index = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -12,6 +13,7 @@ const Index = () => {
           <Nav />
           <AboutMe />
         </section>
+        <Projects />
       </main>
     </div>
   );

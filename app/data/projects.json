@@ -1,0 +1,12 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Citas Veterinaria",
+      "description": "Aplicación para gestión de citas de una clínica veterinaria",
+      "tools": ["react", "tailwindcss", "vitejs", "javascript"],
+      "repo": "https://github.com/franjsb1903/citas-react",
+      "link": "https://fastidious-seahorse-98f522.netlify.app/"
+    }
+  ]
+}
