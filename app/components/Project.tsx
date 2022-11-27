@@ -1,6 +1,7 @@
 import type { ReactElement } from "react";
 import { AiOutlineLink, AiFillGithub } from "react-icons/ai";
 import type { ProjectT } from "~/models/project";
+import { formatTool } from "~/utils/tools-utils";
 
 const ContainerForLinks = ({ children }: { children: ReactElement }) => (
   <div className="flex justify-start items-center gap-5">{children}</div>
@@ -11,7 +12,7 @@ const Link = ({ children, url }: { children: string; url: string }) => (
     href={url}
     target="_blank"
     rel="noreferrer"
-    className="underline text-violet-700 dark:text-violet-400 text-xs md:text-lg"
+    className="underline text-violet-700 dark:text-gray-300 text-xs sm:text-[1rem]"
   >
     {children}
   </a>
@@ -20,14 +21,16 @@ const Link = ({ children, url }: { children: string; url: string }) => (
 const Project = ({ project }: { project: ProjectT }) => (
   <div
     className="
-      w-[300px]
-      md:w-[500px] 
-      h-[200px] 
+      w-[350px]
+      sm:w-[500px] 
+      h-[260px] 
+      max-h-[260px]
+      sm:h-[250px]
+      sm:max-h-[250px]
       flex
       flex-col
       justify-between
       rounded-md 
-      mb-10
       p-2 
       transition 
       duration-300 
@@ -42,25 +45,34 @@ const Project = ({ project }: { project: ProjectT }) => (
       dark:shadow-violet-700 
       dark:hover:shadow-violet-400"
   >
-    <div className="p-2 w-full ">
-      <h3 className="font-extrabold text-transparent text-3xl bg-clip-text bg-gradient-to-r from-violet-400 to-pink-600">
+    <div className="p-2 w-full">
+      <h3 className="font-extrabold text-transparent text-xl md:text-3xl bg-clip-text bg-gradient-to-r from-violet-400 to-pink-600 p-1">
         {project.title}
       </h3>
-      <p className="text-md text-black dark:text-gray-400 py-2">
+      <p className="text-sm lg:text-md text-black dark:text-gray-300 py-2">
         {project.description}
       </p>
     </div>
+    <p className="text-[1rem] text-gray-300 dark:text-gray-500 p-2">
+      {project.tools.map((tool) => formatTool(tool)).join(" / ")}
+    </p>
     <div className="p-2 flex flex-col gap-2">
       <ContainerForLinks>
         <>
-          <AiFillGithub className="text-white" size={"1.5rem"} />
+          <AiFillGithub
+            className="text-violet-700 dark:text-gray-300"
+            size={"1.5rem"}
+          />
           <Link url={project.repo}>{project.repo}</Link>
         </>
       </ContainerForLinks>
       {project.link && (
         <ContainerForLinks>
           <>
-            <AiOutlineLink className="text-white" size={"1.5rem"} />
+            <AiOutlineLink
+              className="text-violet-700 dark:text-gray-300"
+              size={"1.5rem"}
+            />
             <Link url={project.link}>{project.link}</Link>
           </>
         </ContainerForLinks>

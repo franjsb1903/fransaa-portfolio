@@ -32,6 +32,28 @@
       "tools": ["react", "vitejs", "javascript"],
       "repo": "https://github.com/franjsb1903/control-gastos",
       "link": "https://cerulean-rolypoly-11ce7e.netlify.app/"
+    },
+    {
+      "id": 4,
+      "title": "Cotizador Cryptomonedas",
+      "description": "Aplicación para la cotización de criptomonedas en diferentes divisas",
+      "tools": ["react", "styled_components", "vitejs", "javascript"],
+      "repo": "https://github.com/franjsb1903/cotizador-cryptos",
+      "link": "https://comforting-melomakarona-f5fc92.netlify.app/"
+    },
+    {
+      "id": 5,
+      "title": "CRM",
+      "description": "Aplicación CRM para la gestión de clientes",
+      "tools": [
+        "react",
+        "tailwindcss",
+        "vitejs",
+        "javascript",
+        "react_router_dom",
+        "json_web_server"
+      ],
+      "repo": "https://github.com/franjsb1903/crm-react"
     }
   ]
 }
