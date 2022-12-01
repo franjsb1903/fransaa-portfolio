@@ -1,0 +1,33 @@
+{
+  "tools": [
+    "javascript",
+    "typescript",
+    "python",
+    "java",
+    "sql",
+    "react",
+    "react_native",
+    "redux",
+    "material_ui",
+    "html",
+    "css",
+    "styled_components",
+    "tailwindcss",
+    "scss",
+    "nodejs",
+    "express",
+    "jest",
+    "testing_library",
+    "git",
+    "gitlab",
+    "gitflow",
+    "postgresql",
+    "mongo_db",
+    "graphql",
+    "docker",
+    "vitejs",
+    "azure",
+    "fastapi",
+    "flask"
+  ]
+}
