@@ -30,9 +30,13 @@ const Nav = ({
               />
             )}
           </div>
-          <button className="px-4 py-2 rounded-md text-white bg-violet-500 transition duration-300 hover:bg-violet-700">
+          <a
+            href="/docs/SaaBesteiroFranciscoJavier_CV.pdf"
+            download="SaaBesteiroFranciscoJavier_CV.pdf"
+            className="px-4 py-2 rounded-md text-white bg-violet-500 transition duration-300 hover:bg-violet-700"
+          >
             Mi CV
-          </button>
+          </a>
         </div>
       </nav>
     </header>
