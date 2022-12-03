@@ -46,7 +46,7 @@ const Document = ({ children }: { children: ReactElement }) => (
       <Meta />
       <Links />
     </head>
-    <body>
+    <body className="bg-black">
       {children}
       <Scripts />
       <LiveReload />
