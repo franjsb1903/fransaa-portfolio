@@ -31,67 +31,67 @@ import { DiNodejs } from "react-icons/di";
 
 export const formatTool = (
   tool: string
-): { label: string; Icon?: IconType } => {
+): { id: number; label: string; Icon?: IconType } => {
   switch (tool) {
     case "react":
-      return { label: "ReactJS", Icon: SiReact };
+      return { id: 1, label: "ReactJS", Icon: SiReact };
     case "tailwindcss":
-      return { label: "TailwindCSS", Icon: SiTailwindcss };
+      return { id: 2, label: "TailwindCSS", Icon: SiTailwindcss };
     case "vitejs":
-      return { label: "ViteJS", Icon: SiVite };
+      return { id: 3, label: "ViteJS", Icon: SiVite };
     case "javascript":
-      return { label: "JavaScript", Icon: SiJavascript };
+      return { id: 4, label: "JavaScript", Icon: SiJavascript };
     case "styled_components":
-      return { label: "Styled Components", Icon: SiStyledcomponents };
+      return { id: 5, label: "Styled Components", Icon: SiStyledcomponents };
     case "typescript":
-      return { label: "TypeScript", Icon: SiTypescript };
+      return { id: 6, label: "TypeScript", Icon: SiTypescript };
     case "redux":
-      return { label: "Redux", Icon: SiRedux };
+      return { id: 7, label: "Redux", Icon: SiRedux };
     case "react_router_dom":
-      return { label: "React Router DOM" };
+      return { id: 8, label: "React Router DOM" };
     case "nodejs":
-      return { label: "NodeJS", Icon: DiNodejs };
+      return { id: 9, label: "NodeJS", Icon: DiNodejs };
     case "express":
-      return { label: "Express", Icon: SiExpress };
+      return { id: 10, label: "Express", Icon: SiExpress };
     case "sqlite3":
-      return { label: "SQLite3" };
+      return { id: 11, label: "SQLite3" };
     case "json_web_server":
-      return { label: "JSON Web Server" };
+      return { id: 12, label: "JSON Web Server" };
     case "git":
-      return { label: "Git", Icon: SiGit };
+      return { id: 13, label: "Git", Icon: SiGit };
     case "html":
-      return { label: "HTML", Icon: SiHtml5 };
+      return { id: 14, label: "HTML", Icon: SiHtml5 };
     case "css":
-      return { label: "CSS", Icon: SiCss3 };
+      return { id: 15, label: "CSS", Icon: SiCss3 };
     case "docker":
-      return { label: "Docker", Icon: SiDocker };
+      return { id: 16, label: "Docker", Icon: SiDocker };
     case "gitlab":
-      return { label: "GitLab", Icon: AiFillGitlab };
+      return { id: 17, label: "GitLab", Icon: AiFillGitlab };
     case "scss":
-      return { label: "SCSS", Icon: SiSass };
+      return { id: 18, label: "SCSS", Icon: SiSass };
     case "python":
-      return { label: "Python", Icon: SiPython };
+      return { id: 19, label: "Python", Icon: SiPython };
     case "java":
-      return { label: "JAVA", Icon: SiJava };
+      return { id: 20, label: "JAVA", Icon: SiJava };
     case "react_native":
-      return { label: "React Native", Icon: SiReact };
+      return { id: 21, label: "React Native", Icon: SiReact };
     case "postgresql":
-      return { label: "PostgreSQL", Icon: SiPostgresql };
+      return { id: 22, label: "PostgreSQL", Icon: SiPostgresql };
     case "testing_library":
-      return { label: "Testing Library", Icon: SiTestinglibrary };
+      return { id: 23, label: "Testing Library", Icon: SiTestinglibrary };
     case "mongo_db":
-      return { label: "MongoDB", Icon: SiMongodb };
+      return { id: 24, label: "MongoDB", Icon: SiMongodb };
     case "material_ui":
-      return { label: "Material UI", Icon: SiMaterialui };
+      return { id: 25, label: "Material UI", Icon: SiMaterialui };
     case "sql":
-      return { label: "SQL", Icon: AiOutlineConsoleSql };
+      return { id: 26, label: "SQL", Icon: AiOutlineConsoleSql };
     case "jest":
-      return { label: "Jest", Icon: SiJest };
+      return { id: 27, label: "Jest", Icon: SiJest };
     case "gitflow":
-      return { label: "GitFlow", Icon: AiOutlineBranches };
+      return { id: 28, label: "GitFlow", Icon: AiOutlineBranches };
     case "graphql":
-      return { label: "GraphQL", Icon: SiGraphql };
+      return { id: 29, label: "GraphQL", Icon: SiGraphql };
     default:
-      return { label: "" };
+      return { id: 0, label: "" };
   }
 };

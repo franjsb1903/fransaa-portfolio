@@ -12,7 +12,7 @@ const Link = ({ children, url }: { children: string; url: string }) => (
     href={url}
     target="_blank"
     rel="noreferrer"
-    className="underline text-violet-700 dark:text-gray-300 text-xs sm:text-[1rem]"
+    className="underline text-gray-700 dark:text-gray-300 text-xs lg:text-[0.8rem] xl:text-[1rem]"
   >
     {children}
   </a>
@@ -22,11 +22,12 @@ const Project = ({ project }: { project: ProjectT }) => (
   <div
     className="
       w-[350px]
-      sm:w-[500px] 
+      md:w-[420px]
+      xl:w-[500px] 
       h-[260px] 
       max-h-[260px]
-      sm:h-[250px]
-      sm:max-h-[250px]
+      xl:h-[250px]
+      xl:max-h-[250px]
       flex
       flex-col
       justify-between
@@ -41,12 +42,13 @@ const Project = ({ project }: { project: ProjectT }) => (
       hover:shadow-lg
       dark:bg-black
       dark:border-2
-      dark:border-violet-400
-      dark:shadow-violet-700 
-      dark:hover:shadow-violet-400"
+      dark:border-none
+      dark:shadow-gray-400 
+      dark:hover:shadow-violet-400
+      cursor-default"
   >
     <div className="p-2 w-full">
-      <h3 className="font-extrabold text-transparent text-xl md:text-3xl bg-clip-text bg-gradient-to-r from-violet-400 to-pink-600 p-1">
+      <h3 className="font-extrabold text-transparent text-xl lg:text-2xl xl:text-3xl bg-clip-text bg-gradient-to-r from-pink-400 to-violet-600 p-1">
         {project.title}
       </h3>
       <p className="text-sm lg:text-md text-black dark:text-gray-300 py-2">
@@ -60,7 +62,7 @@ const Project = ({ project }: { project: ProjectT }) => (
       <ContainerForLinks>
         <>
           <AiFillGithub
-            className="text-violet-700 dark:text-gray-300"
+            className="text-gray-700 dark:text-gray-300"
             size={"1.5rem"}
           />
           <Link url={project.repo}>{project.repo}</Link>
@@ -70,7 +72,7 @@ const Project = ({ project }: { project: ProjectT }) => (
         <ContainerForLinks>
           <>
             <AiOutlineLink
-              className="text-violet-700 dark:text-gray-300"
+              className="text-gray-700 dark:text-gray-300"
               size={"1.5rem"}
             />
             <Link url={project.link}>{project.link}</Link>
