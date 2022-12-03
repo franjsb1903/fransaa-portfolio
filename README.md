@@ -1,34 +1,30 @@
-# Welcome to Remix!
+# Portfolio Fran Saa
 
-- [Remix Docs](https://remix.run/docs)
+¡Bienvenido a mi portfolio personal! Una página donde me presento como FullStack Engineer, con acceso a todos mis proyectos personales, a mis redes sociales y a mi background y conocimiento de herramientas.
 
-## Deployment
+## Tecnologías
 
-After having run the `create-remix` command and selected "Vercel" as a deployment target, you only need to [import your Git repository](https://vercel.com/new) into Vercel, and it will be deployed.
+La aplicación ha sido creada con las siguientes tecnologías:
 
-If you'd like to avoid using a Git repository, you can also deploy the directory by running [Vercel CLI](https://vercel.com/cli):
+- **ReactJS**
+- **TailwindCSS**
+- **ViteJS**
+- **TypeScript**
+- **Remix Run**
+- **React Router**
 
-```sh
-npm i -g vercel
-vercel
-```
+## Despliegue local
 
-It is generally recommended to use a Git repository, because future commits will then automatically be deployed by Vercel, through its [Git Integration](https://vercel.com/docs/concepts/git).
+Para un despliegue local de la aplicación, simplemente clona el repositorio y en primer lugar instala los paquetes:
 
-## Development
-
-To run your Remix app locally, make sure your project's local dependencies are installed:
-
-```sh
+```bash
 npm install
 ```
 
-Afterwards, start the Remix development server like so:
+Seguidamente, levanta la aplicación con:
 
-```sh
+```bash
 npm run dev
 ```
 
-Open up [http://localhost:3000](http://localhost:3000) and you should be ready to go!
-
-If you're used to using the `vercel dev` command provided by [Vercel CLI](https://vercel.com/cli) instead, you can also use that, but it's not needed.
+Podrás acceder a la aplicación en tu navegador accediento a [http://localhost:3000](http://localhost:3000) (normalmente).
