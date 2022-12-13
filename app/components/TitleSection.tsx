@@ -1,6 +1,6 @@
 const TitleSection = ({ children }: { children: string }) => {
   return (
-    <div className="w-full text-center border-b-2 border-gray-400">
+    <div className="text-center flex flex-col items-center">
       <h3
         className="font-extrabold 
                           text-transparent 
@@ -18,6 +18,7 @@ const TitleSection = ({ children }: { children: string }) => {
       >
         {children}
       </h3>
+      <div className="w-48 border-b-4 border-violet-400"></div>
     </div>
   );
 };

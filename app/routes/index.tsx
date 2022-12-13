@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import Nav from "~/components/Nav";
 import TitleSection from "~/components/TitleSection";
+import Header from "~/components/Header";
 import AboutMe from "~/sections/AboutMe";
 import Projects from "~/sections/Projects";
 import Background from "~/sections/Background";
@@ -16,15 +16,15 @@ const Index = () => {
   return (
     <div className={darkMode ? "dark" : ""}>
       <main className="bg-white dark:bg-black ">
-        <section className="min-h-screen px-5 md:px-20 lg:px-40">
-          <Nav darkMode={darkMode} setDarkMode={setDarkMode} />
+        <Header darkMode={darkMode} setDarkMode={setDarkMode} />
+        <section id="me" className="min-h-screen px-5 md:px-20 lg:px-40">
           <AboutMe />
         </section>
-        <section className="px-2 md:px-20 mt-5">
+        <section id="projects" className="px-2 md:px-20 mt-5">
           <TitleSection>Mis Proyectos</TitleSection>
           <Projects />
         </section>
-        <section className="px-2 md:px-20 mt-5">
+        <section id="background" className="px-2 md:px-20 mt-5">
           <TitleSection>Mi background</TitleSection>
           <Background />
         </section>

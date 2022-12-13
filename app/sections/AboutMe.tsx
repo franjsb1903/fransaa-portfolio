@@ -3,11 +3,11 @@ import Avatar from "../components/Avatar";
 
 const AboutMe = () => {
   return (
-    <div className="mt-10 flex flex-col items-center cursor-default">
-      <h2 className="text-2xl font-bold md:text-4xl text-black dark:text-white">
+    <div className="mt-10 flex flex-col items-center justify-center cursor-default">
+      <h2 className="text-2xl font-bold lg:text-4xl text-black dark:text-white">
         Francisco Javier Saa Besteiro
       </h2>
-      <h4 className="text-lg md:text-2xl text-gray-500 mt-4">
+      <h4 className="text-sm md:text-lg lg:text-2xl text-gray-500 mt-4">
         Ingeniero Informático | FullStack Engineer
       </h4>
       <Avatar />
