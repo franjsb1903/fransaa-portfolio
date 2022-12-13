@@ -17,20 +17,22 @@ const Header = ({
     localStorage.setItem("dm-fsportfolio", darkMode ? "light" : "dark");
   };
 
-  const onChangeToSticky = () => setSticky(true);
+  const onChangeToSticky = () => setTimeout(() => setSticky(true), 300);
 
   return (
     <header
-      className={`dark:bg-black bg-white text-black dark:text-white font-lato   ${
-        sticky ? "sticky top-[0.01px] mt-0" : ""
-      }`}
+      className={`dark:bg-black sticky top-[0.1px] bg-white text-black dark:text-white font-lato`}
     >
       <nav
         className="py-[40px] px-0 grid justify-between items-center nav my-0 mx-auto w-[90%] max-w-[1200px] overflow-hidden"
         id="nav"
       >
         <h3 className="text-3xl font-concert uppercase z-[1]">Fran Saa</h3>
-        <ul className="nav__links items-center bg-white dark:bg-black">
+        <ul
+          className={`nav__links ${
+            !sticky ? "min-h-screen" : ""
+          } items-center bg-white dark:bg-black`}
+        >
           <li className="nav__item">
             <a
               href="#me"
