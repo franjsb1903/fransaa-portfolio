@@ -17,7 +17,7 @@ const Header = ({
     localStorage.setItem("dm-fsportfolio", darkMode ? "light" : "dark");
   };
 
-  const onChangeToSticky = () => setTimeout(() => setSticky(true), 100);
+  const onChangeToSticky = () => setSticky(true);
 
   return (
     <header

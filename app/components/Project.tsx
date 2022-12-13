@@ -4,7 +4,9 @@ import type { ProjectT } from "~/models/project";
 import { formatTool } from "~/utils/tools-utils";
 
 const ContainerForLinks = ({ children }: { children: ReactElement }) => (
-  <div className="flex justify-start items-center gap-5">{children}</div>
+  <div className="flex justify-start items-center gap-2 md:gap-5">
+    {children}
+  </div>
 );
 
 const Link = ({ children, url }: { children: string; url: string }) => (
