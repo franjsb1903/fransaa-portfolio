@@ -521,18 +521,6 @@ video {
   position: sticky !important;
 }
 
-.top-\[0\.1rem\] {
-  top: 0.1rem;
-}
-
-.top-\[0\.01rem\] {
-  top: 0.01rem;
-}
-
-.top-\[0\.px\] {
-  top: 0.px;
-}
-
 .top-\[0\.1px\] {
   top: 0.1px;
 }
@@ -1220,6 +1208,10 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:w-1\/4 {
+    width: 25%;
+  }
+
   .lg\:w-1\/2 {
     width: 50%;
   }

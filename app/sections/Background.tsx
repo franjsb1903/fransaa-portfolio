@@ -9,7 +9,7 @@ const Background = () => (
         label &&
         Icon && (
           <div
-            className="flex flex-col items-center my-4 w-1/2 md:w-1/3 transition-all duration-300 md:hover:scale-125"
+            className="flex flex-col items-center my-4 w-1/2 md:w-1/3 lg:w-1/4 transition-all duration-300 md:hover:scale-125"
             key={`tool-${id}`}
           >
             <Icon className="text-3xl md:text-5xl text-gray-500 dark:text-pink-200" />
