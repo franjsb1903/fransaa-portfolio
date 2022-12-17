@@ -91,6 +91,8 @@ export const formatTool = (
       return { id: 28, label: "GitFlow", Icon: AiOutlineBranches };
     case "graphql":
       return { id: 29, label: "GraphQL", Icon: SiGraphql };
+    case "remix":
+      return { id: 30, label: "Remix Run", Icon: SiReact };
     default:
       return { id: 0, label: "" };
   }

@@ -11,7 +11,7 @@
     {
       "id": 2,
       "title": "Sentidiño",
-      "description": "Aplicación de notas con API y frontend en monorepo",
+      "description": "Simple aplicación de notas, con posibilidad de destacar una nota o marcarla como completada",
       "tools": [
         "react",
         "styled_components",
@@ -54,6 +54,13 @@
         "json_web_server"
       ],
       "repo": "https://github.com/franjsb1903/crm-react"
+    },
+    {
+      "id": 6,
+      "title": "GuitarLA - Remix",
+      "description": "Aplicación para venta de guitarras, cursos y blog",
+      "tools": ["react", "css", "javascript", "remix"],
+      "repo": "https://github.com/franjsb1903/guitarla-remix"
     }
   ]
 }
