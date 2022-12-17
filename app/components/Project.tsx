@@ -57,7 +57,7 @@ const Project = ({ project }: { project: ProjectT }) => (
         {project.description}
       </p>
     </div>
-    <p className="text-[1rem] text-gray-300 dark:text-gray-500 p-2">
+    <p className="text-[1rem] text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-violet-600 p-2">
       {project.tools.map((tool) => formatTool(tool).label).join(" / ")}
     </p>
     <div className="p-2 flex flex-col gap-2">

@@ -13,7 +13,7 @@ const Background = () => (
             key={`tool-${id}`}
           >
             <Icon className="text-3xl md:text-5xl text-gray-500 dark:text-pink-200" />
-            <p className="text-sm md:text-lg text-gray-400 cursor-default">
+            <p className="text-sm md:text-lg text-black-600 dark:text-gray-400 cursor-default">
               {label}
             </p>
           </div>

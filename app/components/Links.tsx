@@ -6,6 +6,7 @@ const Links = () => (
       href="https://www.linkedin.com/in/francisco-javier-saa-besteiro/"
       target="_blank"
       rel="noreferrer"
+      aria-label="Open my personal LinkedIn profile"
       className="hover:text-gray-700 dark:hover:text-violet-400 transition duration-300"
     >
       <AiFillLinkedin />
@@ -14,6 +15,7 @@ const Links = () => (
       href="https://github.com/franjsb1903"
       target="_blank"
       rel="noreferrer"
+      aria-label="Open my personal GitHub profile to see all my projects"
       className="hover:text-gray-700 dark:hover:text-violet-400 transition duration-300"
     >
       <AiFillGithub />

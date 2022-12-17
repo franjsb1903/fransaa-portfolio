@@ -7,9 +7,9 @@ const AboutMe = () => {
       <h2 className="text-2xl font-bold lg:text-4xl text-black dark:text-white">
         Francisco Javier Saa Besteiro
       </h2>
-      <h4 className="text-sm md:text-lg lg:text-2xl text-gray-500 mt-4">
+      <h2 className="text-sm md:text-lg lg:text-2xl text-gray-500 mt-4">
         Ingeniero Informático | FullStack Engineer
-      </h4>
+      </h2>
       <Avatar />
       <p className="my-10 px-3 md:px-0 text-lg md:text-xl md:max-w-xl text-center text-gray-700 dark:text-gray-500">
         ¡Hola 👋🏼! Soy un FullStack Engineer graduado en Ingeniería Informática.

@@ -21,7 +21,7 @@ const Header = ({
 
   return (
     <header
-      className={`dark:bg-black sticky top-[0.1px] bg-white text-black dark:text-white font-lato`}
+      className={`dark:bg-black sticky top-[0.1px] bg-white text-black dark:text-white`}
     >
       <nav
         className="py-[40px] px-0 grid justify-between items-center nav my-0 mx-auto w-[90%] max-w-[1200px] overflow-hidden"
@@ -60,30 +60,38 @@ const Header = ({
               Mi Background
             </a>
           </li>
-          <div className="bg-gray-200 dark:bg-gray-200/[.3] p-2 rounded-md w-[40px] h-[40px]">
-            {darkMode ? (
-              <BsFillSunFill
-                className="cursor-pointer text-2xl text-yellow-400"
-                onClick={onChangeDarkMode}
-              />
-            ) : (
-              <BsFillMoonStarsFill
-                className="cursor-pointer text-2xl "
-                onClick={onChangeDarkMode}
-              />
-            )}
-          </div>
+          <li>
+            <div className="bg-gray-200 dark:bg-gray-200/[.3] p-2 rounded-md w-[40px] h-[40px]">
+              {darkMode ? (
+                <BsFillSunFill
+                  className="cursor-pointer text-2xl text-yellow-400"
+                  onClick={onChangeDarkMode}
+                />
+              ) : (
+                <BsFillMoonStarsFill
+                  className="cursor-pointer text-2xl "
+                  onClick={onChangeDarkMode}
+                />
+              )}
+            </div>
+          </li>
         </ul>
 
         <a
           href="#nav"
           className="nav__hamburguer"
+          aria-label="Open the menu"
           onClick={() => setSticky(false)}
         >
           <GiHamburgerMenu className="text-2xl text-black dark:text-white" />
         </a>
 
-        <a href="#" className="nav__close" onClick={onChangeToSticky}>
+        <a
+          href="#"
+          className="nav__close"
+          aria-label="Close the menu"
+          onClick={onChangeToSticky}
+        >
           <IoCloseSharp className="text-3xl text-black dark:text-white" />
         </a>
       </nav>

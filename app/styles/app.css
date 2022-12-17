@@ -924,6 +924,21 @@ video {
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
+.text-violet-600 {
+  --tw-text-opacity: 1;
+  color: rgb(124 58 237 / var(--tw-text-opacity));
+}
+
+.text-pink-600 {
+  --tw-text-opacity: 1;
+  color: rgb(219 39 119 / var(--tw-text-opacity));
+}
+
+.text-violet-500 {
+  --tw-text-opacity: 1;
+  color: rgb(139 92 246 / var(--tw-text-opacity));
+}
+
 .underline {
   text-decoration-line: underline;
 }
@@ -961,6 +976,8 @@ video {
   font-family: "ConcertOne";
 
   src: url(/fonts/ConcertOne-Regular.ttf);
+
+  font-display: swap;
 }
 
 .nav {
@@ -1110,6 +1127,11 @@ video {
 .dark .dark\:text-pink-200 {
   --tw-text-opacity: 1;
   color: rgb(251 207 232 / var(--tw-text-opacity));
+}
+
+.dark .dark\:text-gray-400 {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
 .dark .dark\:shadow-gray-400 {

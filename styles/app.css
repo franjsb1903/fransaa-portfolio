@@ -5,6 +5,7 @@
 @font-face {
   font-family: "ConcertOne";
   src: url(/fonts/ConcertOne-Regular.ttf);
+  font-display: swap;
 }
 
 .nav {

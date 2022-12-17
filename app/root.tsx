@@ -5,22 +5,7 @@ import type { LinksFunction } from "@remix-run/react/dist/routeModules";
 
 import styles from "./styles/app.css";
 
-export const links: LinksFunction = () => [
-  { rel: "stylesheet", href: styles },
-  {
-    rel: "preconnect",
-    href: "https://fonts.googleapis.com",
-  },
-  {
-    rel: "preconnect",
-    href: "https://fonts.gstatic.com",
-    crossOrigin: "anonymous",
-  },
-  {
-    rel: "stylesheet",
-    href: "https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Outfit:wght@400;700;900&family=Roboto:wght@300;700&display=swap",
-  },
-];
+export const links: LinksFunction = () => [{ rel: "stylesheet", href: styles }];
 
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
