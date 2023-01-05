@@ -10,7 +10,7 @@ const Index = () => {
 
   useEffect(() => {
     const savedDarkMode = localStorage.getItem("dm-fsportfolio");
-    setDarkMode(savedDarkMode === "dar");
+    setDarkMode(savedDarkMode === "dark");
   }, []);
 
   return (
