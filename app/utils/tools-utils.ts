@@ -4,6 +4,7 @@ import {
   AiOutlineConsoleSql,
   AiOutlineBranches,
 } from "react-icons/ai";
+import { DiNodejs } from "react-icons/di";
 import {
   SiReact,
   SiTailwindcss,
@@ -26,14 +27,15 @@ import {
   SiMaterialui,
   SiJest,
   SiGraphql,
+  SiCloudflare,
 } from "react-icons/si";
-import { DiNodejs } from "react-icons/di";
+import { TbBrandNextjs } from "react-icons/tb";
 
 export const formatTool = (
   tool: string
 ): { id: number; label: string; Icon?: IconType } => {
   switch (tool) {
-    case "react":
+    case "reactjs":
       return { id: 1, label: "ReactJS", Icon: SiReact };
     case "tailwindcss":
       return { id: 2, label: "TailwindCSS", Icon: SiTailwindcss };
@@ -41,13 +43,13 @@ export const formatTool = (
       return { id: 3, label: "ViteJS", Icon: SiVite };
     case "javascript":
       return { id: 4, label: "JavaScript", Icon: SiJavascript };
-    case "styled_components":
+    case "styled-components":
       return { id: 5, label: "Styled Components", Icon: SiStyledcomponents };
     case "typescript":
       return { id: 6, label: "TypeScript", Icon: SiTypescript };
     case "redux":
       return { id: 7, label: "Redux", Icon: SiRedux };
-    case "react_router_dom":
+    case "react-router-dom":
       return { id: 8, label: "React Router DOM" };
     case "nodejs":
       return { id: 9, label: "NodeJS", Icon: DiNodejs };
@@ -55,7 +57,7 @@ export const formatTool = (
       return { id: 10, label: "Express", Icon: SiExpress };
     case "sqlite3":
       return { id: 11, label: "SQLite3" };
-    case "json_web_server":
+    case "json-web-server":
       return { id: 12, label: "JSON Web Server" };
     case "git":
       return { id: 13, label: "Git", Icon: SiGit };
@@ -73,15 +75,15 @@ export const formatTool = (
       return { id: 19, label: "Python", Icon: SiPython };
     case "java":
       return { id: 20, label: "JAVA", Icon: SiJava };
-    case "react_native":
+    case "react-native":
       return { id: 21, label: "React Native", Icon: SiReact };
     case "postgresql":
       return { id: 22, label: "PostgreSQL", Icon: SiPostgresql };
-    case "testing_library":
+    case "testing-library":
       return { id: 23, label: "Testing Library", Icon: SiTestinglibrary };
-    case "mongo_db":
+    case "mongo-db":
       return { id: 24, label: "MongoDB", Icon: SiMongodb };
-    case "material_ui":
+    case "material-ui":
       return { id: 25, label: "Material UI", Icon: SiMaterialui };
     case "sql":
       return { id: 26, label: "SQL", Icon: AiOutlineConsoleSql };
@@ -91,9 +93,16 @@ export const formatTool = (
       return { id: 28, label: "GitFlow", Icon: AiOutlineBranches };
     case "graphql":
       return { id: 29, label: "GraphQL", Icon: SiGraphql };
-    case "remix":
+    case "remix-run":
       return { id: 30, label: "Remix Run", Icon: SiReact };
+    case "hono":
+      return { id: 31, label: "Hono", Icon: SiJavascript };
+    case "cloudflare":
+      return { id: 32, label: "Cloudflare", Icon: SiCloudflare };
+    case "nextjs":
+      return { id: 33, label: "NextJS", Icon: TbBrandNextjs };
     default:
+      console.log({ tool });
       return { id: 0, label: "" };
   }
 };

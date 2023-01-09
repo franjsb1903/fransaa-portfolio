@@ -1,28 +1,31 @@
 import type { ProjectT } from "../models/project";
-import { extractInfoReadme } from "~/utils/project-utils";
-
-const URLS = {
-  repos: "https://api.github.com/users/franjsb1903/repos",
-  readme: "https://api.github.com/repos/franjsb1903/$name/readme",
-};
 
 export async function getProjects(): Promise<ProjectT[]> {
-  const repos = await (await fetch(URLS.repos)).json();
+  const response = await fetch(
+    `${process.env.API_GITHUB}/users/franjsb1903/repos`,
+    {
+      headers: {
+        Authorization: `Bearer ${process.env.API_GITHUB_TOKEN}`,
+      },
+    }
+  );
+  const repos = await response.json();
+
+  if (!Array.isArray(repos)) throw new Error("Error fetching projects");
 
   const projects: ProjectT[] = [];
-  console.log({ repos });
-  const promises = repos?.map(async (repo: any) => {
-    const { id, name, description, url } = repo;
 
-    const { content } = await (
-      await fetch(URLS.readme.replace("$name", name))
-    ).json();
+  const finalRepos = repos.filter(
+    (repo) =>
+      repo.name !== "franjsb1903" && repo.name !== "franjsb1903.github.io"
+  );
 
-    const { technologies: tools, url: link } = extractInfoReadme(content ?? "");
+  const promises = finalRepos?.map(async (repo) => {
+    const { id, name, description, url, homepage: link, topics: tools } = repo;
 
     const project: ProjectT = {
       id,
-      title: name,
+      title: name.replace(/-/g, " ").toUpperCase(),
       description,
       tools: tools ?? [],
       repo: url,
