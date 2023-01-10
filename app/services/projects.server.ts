@@ -12,7 +12,12 @@ export async function getProjects(): Promise<ProjectT[]> {
     .then((res) => res.json())
     .then((data) => data);
 
-  if (!Array.isArray(repos)) throw new Error("Error fetching projects");
+  if (!Array.isArray(repos))
+    throw new Response("", {
+      status: 500,
+      statusText:
+        "No se han podido recuperar los proyectos, por favor, ponte en contacto conmigo en fjsbesteiro@outlook.es",
+    });
 
   const finalRepos = repos.filter(
     (repo) =>
