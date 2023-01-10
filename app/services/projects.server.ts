@@ -21,7 +21,14 @@ export async function getProjects(): Promise<ProjectT[]> {
   );
 
   const promises = finalRepos?.map(async (repo) => {
-    const { id, name, description, url, homepage: link, topics: tools } = repo;
+    const {
+      id,
+      name,
+      description,
+      html_url: url,
+      homepage: link,
+      topics: tools,
+    } = repo;
 
     const project: ProjectT = {
       id,
