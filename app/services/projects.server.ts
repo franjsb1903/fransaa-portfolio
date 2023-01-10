@@ -1,26 +1,30 @@
 import type { ProjectT } from "../models/project";
 
 export async function getProjects(): Promise<ProjectT[]> {
-  const response = await fetch(
+  const repos = await fetch(
     `${process.env.API_GITHUB}/users/franjsb1903/repos`,
     {
       headers: {
         Authorization: `Bearer ${process.env.API_GITHUB_TOKEN}`,
       },
     }
-  );
-  const repos = await response.json();
+  )
+    .then((res) => res.json())
+    .then((data) => data);
 
-  if (!Array.isArray(repos)) throw new Error("Error fetching projects");
-
-  const projects: ProjectT[] = [];
+  if (!Array.isArray(repos))
+    throw new Response("", {
+      status: 500,
+      statusText:
+        "No se han podido recuperar los proyectos, por favor, ponte en contacto conmigo en fjsbesteiro@outlook.es",
+    });
 
   const finalRepos = repos.filter(
     (repo) =>
       repo.name !== "franjsb1903" && repo.name !== "franjsb1903.github.io"
   );
 
-  const promises = finalRepos?.map(async (repo) => {
+  const projects: ProjectT[] = finalRepos?.map((repo) => {
     const {
       id,
       name,
@@ -30,7 +34,7 @@ export async function getProjects(): Promise<ProjectT[]> {
       topics: tools,
     } = repo;
 
-    const project: ProjectT = {
+    return {
       id,
       title: name.replace(/-/g, " ").toUpperCase(),
       description,
@@ -38,11 +42,7 @@ export async function getProjects(): Promise<ProjectT[]> {
       repo: url,
       link,
     };
-
-    projects.push(project);
   });
-
-  await Promise.all(promises);
 
   return projects;
 }
