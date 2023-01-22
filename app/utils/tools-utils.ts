@@ -101,6 +101,8 @@ export const formatTool = (
       return { id: 32, label: "Cloudflare", Icon: SiCloudflare };
     case "nextjs":
       return { id: 33, label: "NextJS", Icon: TbBrandNextjs };
+    case "astro":
+      return { id: 34, label: "Astro", Icon: SiTypescript };
     default:
       console.log({ tool });
       return { id: 0, label: "" };
